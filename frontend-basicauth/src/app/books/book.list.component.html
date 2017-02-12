@@ -1,0 +1,9 @@
+{{title}}
+<p>
+<ul>
+  <li *ngFor="let book of books">
+    {{book.author}}: {{book.title}} ({{book.isbn}})
+  </li>
+</ul>
+<button (click)="loadBooks()">Reload</button>
+<button routerLink="newbook">Create new book</button>
